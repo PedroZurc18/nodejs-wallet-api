@@ -13,7 +13,7 @@ Esta é uma Prova de Conceito de uma API backend para um sistema de carteira. O 
 ## Decisões de Arquitetura
 
 O projeto foi construído inspirado em princípios de **Domain-Driven Design (DDD)** e separação de responsabilidades:
-1. **Controller (`wallet.controller.ts`):** Atua apenas como a porta de entrada (I/O), recebendo as requisições HTTP e repassando para o Service.
+1. **Controller (`wallet.controller.ts`):** Atua apenas como a porta de entrada, recebendo as requisições HTTP e repassando para o Service.
 2. **Service (`wallet.service.ts`):** Orquestra o fluxo de dados, buscando informações no banco e coordenando as ações.
 3. **Entity (`player.entity.ts`):** Protege as regras de negócio vitais. A lógica que impede um depósito negativo, por exemplo, vive encapsulada dentro da própria entidade do Jogador, garantindo que o estado da carteira nunca fique inconsistente.
 
